@@ -4,9 +4,11 @@ return {
     "rcarriga/nvim-dap-ui",
     "nvim-neotest/nvim-nio",
     "leoluz/nvim-dap-go",
+    "mfussenegger/nvim-dap-python",
   },
   config = function()
     require("dap-go").setup()
+    require("dap-python").setup()
     require("dapui").setup()
 
     local dap, dapui = require("dap"), require("dapui")
