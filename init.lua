@@ -13,4 +13,5 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("config.defaults")
+require("config.mappings")
 require("lazy").setup("plugins")
