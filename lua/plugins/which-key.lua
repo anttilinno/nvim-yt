@@ -27,6 +27,15 @@ return {
           v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" }, -- Vertical Terminal
           l = { "<cmd>lua _LAZYGIT_TOGGLE()<cr>", "Lazygit" },
         },
+        -- Flash Search
+        -- stylua: ignore
+        l = {
+          name = "flash",
+          s = { function () require("flash").jump() end, "Flash Jump" },
+          t = { function () require("flash").treesitter() end, "Flash Treesitter" },
+          r = { function () require("flash").treesitter_search() end, "Flash Treesitter Search" },
+          f = { function () require("flash").toggle() end, "Flash Toggle" },
+        },
       },
     })
   end,
