@@ -25,7 +25,6 @@ return {
           f = { "<cmd>ToggleTerm direction=float<cr>", "Float" }, -- Floating Terminal
           h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" }, -- Horizontal Terminal,
           v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" }, -- Vertical Terminal
-          l = { "<cmd>lua _LAZYGIT_TOGGLE()<cr>", "Lazygit" },
         },
         -- Flash Search
         -- stylua: ignore
