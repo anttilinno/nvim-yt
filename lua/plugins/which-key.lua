@@ -35,6 +35,12 @@ return {
           r = { function () require("flash").treesitter_search() end, "Flash Treesitter Search" },
           f = { function () require("flash").toggle() end, "Flash Toggle" },
         },
+        -- Visual Related things
+        -- stylua: ignore
+        a = {
+          name = "visual",
+          t = { "<cmd>Themery<cr>", "Theme Switcher" },
+        },
       },
     })
   end,

@@ -6,7 +6,18 @@ return {
     "nvim-tree/nvim-web-devicons",
     "MunifTanjim/nui.nvim",
   },
-  config = true,
+  config = function()
+    require("neo-tree").setup({
+      event_handlers = {
+        {
+          event = "file_opened",
+          handler = function(file_path)
+            require("neo-tree.command").execute({ action = "close" })
+          end,
+        },
+      },
+    })
+  end,
   keys = function()
     local find_buffer_by_type = function(type)
       for _, buf in ipairs(vim.api.nvim_list_bufs()) do
