@@ -11,6 +11,7 @@ return {
 
     wk.register({
       ["<leader>"] = {
+        ["x"] = { "<cmd>bdelete<CR>", "Kill Buffer" },
         -- Telescope
         f = {
           name = "+file",
